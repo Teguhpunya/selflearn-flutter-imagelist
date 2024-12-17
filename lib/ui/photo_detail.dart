@@ -24,10 +24,8 @@ class PhotoDetail extends StatelessWidget {
                         pinned: true,
                         backgroundColor:
                             Theme.of(context).colorScheme.inversePrimary,
-                        // backgroundColor: Colors.transparent,
                         expandedHeight: 300,
                         flexibleSpace: FlexibleSpaceBar(
-                          // title: const Text('Photo Detail'),
                           background: Image.network(previewUrl),
                         ),
                       )

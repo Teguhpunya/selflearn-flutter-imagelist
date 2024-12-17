@@ -14,11 +14,6 @@ class MainLayout extends StatelessWidget {
         title: Text(title),
       ),
       body: body,
-      // floatingActionButton: FloatingActionButton(
-      //   onPressed: _incrementCounter,
-      //   tooltip: 'Increment',
-      //   child: const Icon(Icons.add),
-      // ),
     );
   }
 }

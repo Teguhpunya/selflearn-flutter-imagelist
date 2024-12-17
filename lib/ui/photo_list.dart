@@ -51,12 +51,15 @@ class _PhotoTilesState extends State<PhotoTiles> {
                   children: s.data!.map((photo) {
                     String downloadUrl = photo.downloadUrl;
                     String previewUrl = downloadUrl.replaceAllMapped(
-                        RegExp(r'/id/\d+/\d+/\d+'), (match) => '/id/${match.group(0)!.split('/')[2]}/500/500');
+                        RegExp(r'/id/\d+/\d+/\d+'),
+                        (match) =>
+                            '/id/${match.group(0)!.split('/')[2]}/500/500');
                     return ElevatedButton(
                       onPressed: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => PhotoDetail(photo: photo)),
+                          MaterialPageRoute(
+                              builder: (context) => PhotoDetail(photo: photo)),
                         );
                       },
                       style: ElevatedButton.styleFrom(
