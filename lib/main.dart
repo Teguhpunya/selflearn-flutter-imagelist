@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:image_unsplash/layout/main_layout.dart';
-import 'package:image_unsplash/ui/browse_photos.dart';
+import 'package:image_unsplash/ui/photo_list.dart';
 
 void main() {
   runApp(const MyApp());
